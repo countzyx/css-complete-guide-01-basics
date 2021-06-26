@@ -19,3 +19,8 @@ code {
 li {
   font-family: inherit;
 }
+
+li + li {
+  background-color: black;
+  color: white;
+}
