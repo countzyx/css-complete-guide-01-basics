@@ -1,3 +1,7 @@
+* {
+  font-family: sans-serif;
+}
+
 #assignment-instructions {
   color: indigo;
   font-family: sans-serif;
@@ -10,4 +14,8 @@
 code {
   color: red;
   font-family: monospace;
+}
+
+li {
+  font-family: inherit;
 }
