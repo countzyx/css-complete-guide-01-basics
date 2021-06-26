@@ -7,3 +7,7 @@ code {
   color: indigo;
   font-family: sans-serif;
 }
+
+.code-green code {
+  color: green;
+}
