@@ -1,8 +1,3 @@
-code {
-  color: red;
-  font-family: monospace;
-}
-
 #assignment-instructions {
   color: indigo;
   font-family: sans-serif;
@@ -10,4 +5,9 @@ code {
 
 .code-green code {
   color: green;
+}
+
+code {
+  color: red;
+  font-family: monospace;
 }
