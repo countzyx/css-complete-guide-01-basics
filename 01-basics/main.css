@@ -25,6 +25,10 @@ body {
   width: 100%;
 }
 
+.main-nav__item {
+  display: inline-block;
+}
+
 .section-title {
   color: #2ddf5c;
 }
