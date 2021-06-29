@@ -1,5 +1,17 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 .box {
   border: 3px gold solid;
   margin: 10px 20px 30px 40px;
   padding: 40px 30px 20px 10px;
+}
+
+#box1 {
+  height: 100%;
 }
