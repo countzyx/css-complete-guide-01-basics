@@ -25,16 +25,19 @@ body {
   width: 100%;
 }
 
+.main-header a {
+  color: #0e4f1f;
+  text-decoration: none;
+}
+
 .main-header > div {
   display: inline-block;
   vertical-align: middle;
 }
 
 .main-header__brand {
-  color: #0e4f1f;
   font-size: 22px;
   font-weight: bold;
-  text-decoration: none;
 }
 
 .main-nav {
@@ -46,6 +49,15 @@ body {
 
 .main-nav__item {
   display: inline-block;
+  margin: 0 16px;
+}
+
+.main-nav__item a:active {
+  color: white;
+}
+
+.main-nav__item a:hover {
+  color: white;
 }
 
 .main-nav__items {
