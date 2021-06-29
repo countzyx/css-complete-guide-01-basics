@@ -9,9 +9,7 @@ body {
 
 #product-overview {
   background: #ff1b68;
-  border: 5px black solid;
   height: 528px;
-  margin: 10px;
   padding: 10px;
   width: 100%;
 }
