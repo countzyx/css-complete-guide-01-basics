@@ -58,6 +58,20 @@ body {
   border-bottom: 3px white solid;
 }
 
+.main-nav__item--cta a {
+  background: #ff1b68;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 16px;
+}
+
+.main-nav__item--cta a:active,
+.main-nav__item--cta a:hover {
+  background: white;
+  border: none;
+  color: #ff1b68;
+}
+
 .main-nav__items {
   list-style: none;
   margin: 0;
