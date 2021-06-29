@@ -6,6 +6,11 @@ body {
   height: 100%;
 }
 
+div:last-of-type:hover {
+  border: 3px white solid;
+  background: gold;
+}
+
 .box {
   border: 3px gold solid;
   display: inline-block;
