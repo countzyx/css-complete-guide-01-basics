@@ -27,6 +27,7 @@ body {
 
 .main-header a {
   color: #0e4f1f;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -37,7 +38,6 @@ body {
 
 .main-header__brand {
   font-size: 22px;
-  font-weight: bold;
 }
 
 .main-nav {
@@ -55,6 +55,7 @@ body {
 .main-nav__item a:active,
 .main-nav__item a:hover {
   color: white;
+  border-bottom: 3px white solid;
 }
 
 .main-nav__items {
