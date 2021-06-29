@@ -52,10 +52,7 @@ body {
   margin: 0 16px;
 }
 
-.main-nav__item a:active {
-  color: white;
-}
-
+.main-nav__item a:active,
 .main-nav__item a:hover {
   color: white;
 }
