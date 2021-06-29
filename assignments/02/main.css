@@ -15,5 +15,6 @@ body {
 
 #box1 {
   height: 300px;
+  visibility: hidden;
   width: 50%;
 }
