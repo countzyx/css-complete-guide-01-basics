@@ -98,3 +98,11 @@ body {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
   color: white;
 }
+
+.plan__annotation {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  color: #19b84c;
+  padding: 8px;
+}
