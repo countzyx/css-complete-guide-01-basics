@@ -1,0 +1,17 @@
+main {
+  padding-top: 32px;
+}
+
+.package {
+  border: 4px #0e4f1f solid;
+  border-left: none;
+  margin: 16px 0;
+  width: 80%;
+}
+
+.package a {
+  color: inherit;
+  display: block;
+  padding: 32px;
+  text-decoration: none;
+}
