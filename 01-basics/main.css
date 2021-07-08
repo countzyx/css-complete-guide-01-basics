@@ -15,6 +15,15 @@
   text-align: center;
 }
 
+.plans {
+}
+
+.plans__list {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
 .plan {
   background: #d5ffdc;
   display: inline-block;
