@@ -34,6 +34,11 @@ main {
   text-align: right;
 }
 
+#free-plan:active,
+#free-plan:hover {
+  border-color: #ff5454;
+}
+
 #premium-plan {
   background: rgba(14, 79, 31, 0.95);
 }
