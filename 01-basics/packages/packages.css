@@ -28,6 +28,10 @@ main {
 
 #free-plan {
   background: rgba(234, 252, 237, 0.95);
+  border-left: 4px #0e4f1f solid;
+  border-right: none;
+  float: right;
+  text-align: right;
 }
 
 #premium-plan {
@@ -46,7 +50,7 @@ main {
   border: 1px #0e4f1f solid;
   color: #0e4f1f;
   font-size: 20px;
-  padding: 60px;
+  padding: 16px;
 }
 
 #premium-plan .package__title {
@@ -55,4 +59,8 @@ main {
 
 #premium-plan .package__subtitle {
   color: #bbb;
+}
+
+.floatfix {
+  clear: both;
 }
