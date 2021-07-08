@@ -9,9 +9,50 @@ main {
   width: 80%;
 }
 
+.package:active,
+.package:hover {
+  border-color: #ff5454;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .package a {
   color: inherit;
   display: block;
   padding: 32px;
   text-decoration: none;
+}
+
+#plus-plan {
+  background: rgba(213, 255, 220, 0.95);
+}
+
+#free-plan {
+  background: rgba(234, 252, 237, 0.95);
+}
+
+#premium-plan {
+  background: rgba(14, 79, 31, 0.95);
+}
+
+.package__title {
+}
+
+.package__subtitle {
+  color: #999;
+}
+
+.package__info {
+  background: white;
+  border: 1px #0e4f1f solid;
+  color: #0e4f1f;
+  font-size: 20px;
+  padding: 60px;
+}
+
+#premium-plan .package__title {
+  color: white;
+}
+
+#premium-plan .package__subtitle {
+  color: #bbb;
 }
