@@ -4,6 +4,7 @@
   height: 528px;
   margin-top: 43px;
   padding: 10px;
+  position: relative;
 }
 
 .section-title {
@@ -15,7 +16,6 @@
   color: white;
   font-family: 'Anton', sans-serif;
   position: absolute;
-  top: 500px;
 }
 
 .plan__list {
