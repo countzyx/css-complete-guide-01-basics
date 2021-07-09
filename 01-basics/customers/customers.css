@@ -12,11 +12,24 @@
   margin-top: 96px;
 }
 
+.testimonial__image-container {
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  vertical-align: middle;
+  width: 65%;
+}
+
+.testimonial__image {
+  vertical-align: top; /* fix box-shadow bug */
+  width: 100%;
+}
+
 .testimonial__info {
   text-align: right;
   padding: 14px;
   display: inline-block;
   vertical-align: middle;
+  width: 30%;
 }
 
 #customer-2.testimonial {
