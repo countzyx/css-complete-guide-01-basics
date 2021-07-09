@@ -1,5 +1,6 @@
 .plans-background {
-  background: url('../assets//plans-background.jpg');
+  background: url('../assets//plans-background.jpg') center/cover;
+  filter: grayscale(40%);
   height: 100%;
   position: fixed;
   width: 100%;
