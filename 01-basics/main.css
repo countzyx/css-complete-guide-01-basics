@@ -1,13 +1,17 @@
 #product-overview {
   background: url('assets/freedom.jpg');
   height: 528px;
+  margin-top: 43px;
   padding: 10px;
+  position: relative;
   width: 100%;
 }
 
 #product-overview h1 {
+  bottom: 0;
   color: white;
   font-family: 'Anton', sans-serif;
+  position: absolute;
 }
 
 .section-title {
