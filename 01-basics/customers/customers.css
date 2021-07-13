@@ -1,5 +1,5 @@
 .testimonial {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin: 3rem 0;
 }
 
@@ -27,7 +27,7 @@
 
 .testimonial__info {
   display: inline-block;
-  padding: 0.9rem;
+  padding: 0.875rem;
   text-align: right;
   vertical-align: middle;
   width: 30%;
@@ -43,13 +43,13 @@
 
 .testimonial__name {
   font-size: 2rem;
-  margin: 0.2rem;
+  margin: 0.1875rem;
   color: #ff5454;
 }
 
 .testimonial__subtitle {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   color: #ccc;
 }
 
@@ -64,5 +64,5 @@
 }
 
 .testimonial__text {
-  margin: 0.2rem;
+  margin: 0.1875rem;
 }

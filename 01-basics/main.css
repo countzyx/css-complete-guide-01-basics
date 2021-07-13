@@ -2,8 +2,8 @@
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
     url('assets/freedom.jpg') left 10% bottom 20% / cover no-repeat border-box, gray;
   height: 528px;
-  margin-top: 43px;
-  padding: 10px;
+  margin-top: 2.625rem;
+  padding: 0.625rem;
   position: relative;
   width: 100%;
 }
@@ -32,8 +32,8 @@
 .plan {
   background: #d5ffdc;
   display: inline-block;
-  margin: 8px;
-  padding: 16px;
+  margin: 0.5rem;
+  padding: 1rem;
   text-align: center;
   vertical-align: middle;
   width: 30%;
@@ -47,10 +47,10 @@
 
 .plan__annotation {
   background: white;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
   color: #19b84c;
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 .plan__title {
@@ -76,18 +76,18 @@
 }
 
 .plan__features li {
-  margin: 8px 0;
+  margin: 0.5rem 0;
 }
 
 #key-features {
   background: #ff1b68;
-  margin-top: 80px;
-  padding: 16px;
+  margin-top: 5rem;
+  padding: 1rem;
 }
 
 #key-features .section-title {
   color: white;
-  margin: 32px;
+  margin: 2rem;
 }
 
 .key-features__list {
@@ -108,15 +108,15 @@
   background: #ffcede;
   border: 2px #424242 solid;
   border-radius: 50%;
-  height: 128px;
+  height: 8rem;
   margin: auto;
-  padding: 20px;
-  width: 128px;
+  padding: 1.25rem;
+  width: 8rem;
 }
 
 .key-feature__description {
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
 }
