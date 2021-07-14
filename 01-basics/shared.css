@@ -7,6 +7,17 @@ body {
   margin: 0;
 }
 
+.backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+
 .main-header {
   background: #2ddf5c;
   left: 0;
