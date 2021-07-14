@@ -1,11 +1,11 @@
 #product-overview {
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url('assets/freedom.jpg') left 10% bottom 20% / cover no-repeat border-box, gray;
-  height: 528px;
+    url('assets/freedom.jpg') left 10% bottom 70% / cover no-repeat border-box, gray;
+  height: 33vh;
   margin-top: 2.625rem;
   padding: 0.625rem;
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 
 #product-overview h1 {
