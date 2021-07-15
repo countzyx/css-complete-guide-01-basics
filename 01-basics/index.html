@@ -14,10 +14,18 @@
     />
     <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
   <body>
-    <div class="backdrop"></div>
+    <div id="backdrop"></div>
+    <div id="modal">
+      <h1 class="modal__title">Do you want to continue?</h1>
+      <div class="modal__actions">
+        <a href="start-hosting/index.html" class="modal__action">Yes!</a>
+        <button class="modal__action modal__action--negative" type="button">No!</button>
+      </div>
+    </div>
     <header class="main-header">
       <div>
         <a href="index.html" class="main-header__brand">
@@ -440,5 +448,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="shared.js"></script>
   </body>
 </html>

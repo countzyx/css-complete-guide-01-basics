@@ -120,3 +120,52 @@
   font-weight: bold;
   text-align: center;
 }
+
+#modal {
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  display: none;
+  left: 30%;
+  padding: 1rem;
+  position: fixed;
+  top: 20%;
+  width: 40%;
+  z-index: 1001;
+}
+
+.modal__title {
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  background: #0e4f1f;
+  border: 1px solid #0e4f1f;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: red;
+  border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}

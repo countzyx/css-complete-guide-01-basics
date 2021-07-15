@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 
-.backdrop {
+#backdrop {
   background: rgba(0, 0, 0, 0.5);
   display: none;
   height: 100vh;
