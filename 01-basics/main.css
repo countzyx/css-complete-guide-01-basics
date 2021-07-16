@@ -15,6 +15,17 @@
   position: absolute;
 }
 
+@media (min-width: 40rem) {
+  #product-overview {
+    background-position: 50% 25%;
+    height: 40vh;
+  }
+
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+}
+
 .section-title {
   color: #2ddf5c;
   text-align: center;
