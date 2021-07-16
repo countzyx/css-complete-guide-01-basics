@@ -10,7 +10,7 @@ $(function () {
   const modal = $('#modal');
   // console.log(backdrop, modal);
   const closeModal = function () {
-    modal.hide();
+    modal && modal.hide();
     backdrop.hide();
   };
 
@@ -21,12 +21,12 @@ $(function () {
 
   const noButton = modal.find('.modal__action--negative');
   // console.log(noButton);
-  noButton.click(closeModal);
+  noButton && noButton.click(closeModal);
 
   const planButtons = $('.plan button');
   // console.log(planButtons);
   planButtons.click(function () {
     backdrop.show();
-    modal.show();
+    modal && modal.show();
   });
 });
