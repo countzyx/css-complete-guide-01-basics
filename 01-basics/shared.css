@@ -73,52 +73,7 @@ body {
 }
 
 #main-nav {
-  display: inline-block;
-  text-align: right;
-  vertical-align: middle;
-  width: calc(100% - 122px);
-}
-
-.main-nav__items {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav__item {
-  display: inline-block;
-  margin: 0 1rem;
-}
-
-.main-nav__item a,
-.mobile-nav__item a {
-  color: #0e4f1f;
-  font-weight: bold;
-  padding: 0.25rem 0;
-  text-decoration: none;
-}
-
-.main-nav__item a:active,
-.main-nav__item a:hover {
-  color: white;
-  border-bottom: 0.1875rem white solid;
-}
-
-.main-nav__item--cta a,
-.mobile-nav__item--cta a {
-  background: #ff1b68;
-  border-radius: 0.5rem;
-  color: white;
-  padding: 0.5rem 1rem;
-}
-
-.main-nav__item--cta a:active,
-.main-nav__item--cta a:hover,
-.mobile-nav__item--cta a:active,
-.mobile-nav__item--cta a:hover {
-  background: white;
-  border: none;
-  color: #ff1b68;
+  display: none;
 }
 
 #mobile-nav {
@@ -146,7 +101,25 @@ body {
 }
 
 .mobile-nav__item a {
+  color: #0e4f1f;
   font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.25rem 0;
+  text-decoration: none;
+}
+
+.mobile-nav__item--cta a {
+  background: #ff1b68;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.mobile-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover {
+  background: white;
+  border: none;
+  color: #ff1b68;
 }
 
 .button {
@@ -202,5 +175,61 @@ body {
 @media (min-width: 40rem) {
   #toggle-button {
     display: none;
+  }
+
+  .main-header__brand {
+    display: inherit;
+    font-size: 1.375rem;
+    height: 3rem;
+    vertical-align: middle;
+  }
+
+  .main-header__brand img {
+    height: 100%;
+  }
+
+  #main-nav {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    width: calc(100% - 122px);
+  }
+
+  .main-nav__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+
+  .main-nav__item a {
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 0.25rem 0;
+    text-decoration: none;
+  }
+
+  .main-nav__item a:active,
+  .main-nav__item a:hover {
+    color: white;
+    border-bottom: 0.1875rem white solid;
+  }
+
+  .main-nav__item--cta a {
+    background: #ff1b68;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+
+  .main-nav__item--cta a:active,
+  .main-nav__item--cta a:hover {
+    background: white;
+    border: none;
+    color: #ff1b68;
   }
 }
