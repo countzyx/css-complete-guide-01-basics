@@ -198,3 +198,6 @@ body {
 .main-footer__link a:hover {
   color: #ccc;
 }
+
+@media (min-width: 40rem) {
+}
