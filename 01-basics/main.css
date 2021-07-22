@@ -120,9 +120,7 @@
 }
 
 .key-feature {
-  display: inline-block;
-  vertical-align: top;
-  width: 30%;
+  width: 100%;
 }
 
 .key-feature__image {
@@ -140,6 +138,15 @@
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
+}
+
+@media (min-width: 40rem) {
+  .key-feature {
+    display: inline-block;
+    max-width: 25rem;
+    vertical-align: top;
+    width: 30%;
+  }
 }
 
 #modal {
