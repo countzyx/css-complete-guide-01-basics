@@ -34,11 +34,6 @@
 .plans {
 }
 
-/* .plans__list {
-  text-align: center;
-  width: 100%;
-} */
-
 .plan {
   background: #d5ffdc;
   padding: 1rem;
@@ -84,6 +79,25 @@
 
 .plan__features li {
   margin: 0.5rem 0;
+}
+
+@media (min-width: 40rem) {
+  .plans__list {
+    text-align: center;
+    width: 100%;
+  }
+
+  .plan {
+    display: inline-block;
+    max-width: 25rem;
+    min-width: 13rem;
+    vertical-align: middle;
+    width: 30%;
+  }
+
+  .plan--highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
 }
 
 #key-features {
