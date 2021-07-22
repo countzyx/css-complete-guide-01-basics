@@ -158,7 +158,6 @@ body {
 }
 
 .main-footer__link {
-  display: inline-block;
   margin: 0 1rem;
 }
 
@@ -231,5 +230,10 @@ body {
     background: white;
     border: none;
     color: #ff1b68;
+  }
+
+  .main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
   }
 }
