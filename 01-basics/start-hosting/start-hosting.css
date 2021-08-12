@@ -27,10 +27,11 @@ main {
 #signup-form input[id*='agree-terms'],
 #signup-form input[id*='agree-terms'] + label {
   display: inline-block;
+  vertical-align: middle;
   width: auto;
 }
 
-#signup-form input,
+#signup-form input:not([type='checkbox']),
 #signup-form select {
   border: 1px solid #ccc;
   font: inherit;
@@ -42,6 +43,21 @@ main {
   background: #d8f3df;
   border-color: #2ddf5c;
   outline: none;
+}
+
+#signup-form input[type='checkbox'] {
+  appearance: none;
+  background: white;
+  border: 1px solid #ccc;
+  height: 1rem;
+  width: 1rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+#signup-form input[type='checkbox']:checked {
+  background: #2ddf5c;
+  border-color: #0e4f1f;
 }
 
 #signup-form button[type='submit'] {
