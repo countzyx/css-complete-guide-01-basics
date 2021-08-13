@@ -61,9 +61,10 @@ main {
 }
 
 #signup-form input.invalid,
-#signup-form select.invalid {
+#signup-form select.invalid,
+#signup-form :invalid {
   background: #faacac;
-  border-color: red;
+  border-color: red !important;
 }
 
 #signup-form button[type='submit'] {
