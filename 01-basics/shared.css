@@ -147,6 +147,13 @@ main {
   outline: none;
 }
 
+.button[disabled] {
+  background: #ccc;
+  border-color: #a1a1a1;
+  color: #a1a1a1;
+  cursor: not-allowed;
+}
+
 .main-footer {
   background: black;
   color: white;
