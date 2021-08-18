@@ -75,6 +75,7 @@ main {
   background: white;
   border: 1px #0e4f1f solid;
   color: #0e4f1f;
+  font-family: Roboto, sans-serif;
   font-size: 1.25rem;
   padding: 1rem;
 }
