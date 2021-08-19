@@ -18,8 +18,8 @@ body {
   background: white;
   border: 5px solid black;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 10px;
 }
 
