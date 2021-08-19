@@ -28,7 +28,11 @@ main {
 }
 
 .main-header {
+  align-items: center;
   background: #2ddf5c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   left: 0;
   padding: 0.5rem 1rem;
   position: fixed;
@@ -41,11 +45,6 @@ main {
   color: #0e4f1f;
   font-weight: bold;
   text-decoration: none;
-}
-
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
 }
 
 #toggle-button {
@@ -71,13 +70,11 @@ main {
 }
 
 .main-header__brand {
-  display: inherit;
-  height: 2.5rem;
-  vertical-align: middle;
 }
 
 .main-header__brand img {
-  height: 100%;
+  height: 2.5rem;
+  vertical-align: middle;
 }
 
 #main-nav {
@@ -96,11 +93,15 @@ main {
 }
 
 .mobile-nav__items {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  justify-content: center;
   list-style: none;
-  margin: 10% auto;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
   width: 90%;
 }
 
@@ -191,31 +192,18 @@ main {
     display: none;
   }
 
-  .main-header__brand {
-    display: inherit;
-    height: 2.5rem;
-    vertical-align: middle;
-  }
-
-  .main-header__brand img {
-    height: 100%;
-  }
-
   #main-nav {
-    display: inline-block;
-    text-align: right;
-    vertical-align: middle;
-    width: calc(100% - 122px);
+    display: flex;
   }
 
   .main-nav__items {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
   .main-nav__item {
-    display: inline-block;
     margin: 0 1rem;
   }
 
