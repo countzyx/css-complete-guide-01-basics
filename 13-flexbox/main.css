@@ -15,11 +15,11 @@ body {
 }
 
 .flex-container {
-  align-items: center;
+  align-items: flex-start;
   background: white;
   border: 5px solid black;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   padding: 10px;
 }
 
