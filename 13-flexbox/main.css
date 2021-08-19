@@ -19,7 +19,7 @@ body {
   border: 5px solid black;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding: 10px;
 }
 
