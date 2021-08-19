@@ -18,6 +18,8 @@ body {
   background: white;
   border: 5px solid black;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   padding: 10px;
 }
 
