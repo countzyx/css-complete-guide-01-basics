@@ -11,6 +11,9 @@
 
 .el2 {
   background: rgba(255, 0, 0, 0.5);
+  grid-column-end: -1;
+  grid-column-start: 1;
+  grid-row-start: 2;
 }
 
 .el3 {
