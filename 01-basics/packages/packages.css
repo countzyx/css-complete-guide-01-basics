@@ -15,6 +15,7 @@ main {
   border: 4px #0e4f1f solid;
   border-left: none;
   margin: 1rem 0;
+  overflow: hidden;
   position: relative;
   width: 80%;
 }
@@ -60,11 +61,13 @@ main {
   background: #ff5454;
   color: white;
   font-size: 0.75rem;
-  margin: 1.25rem;
   padding: 0.625rem;
   position: absolute;
   right: 0;
+  text-align: center;
   top: 0;
+  transform: rotateZ(45deg) translateX(3rem) translateY(-1rem);
+  width: 12rem;
 }
 
 .package__subtitle {
