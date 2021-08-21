@@ -4,31 +4,32 @@ html {
 
 body {
   height: 100%;
-}
-
-#container {
   display: grid;
   height: 100%;
   grid-template-columns: 10rem 1fr;
   grid-template-rows: 5rem 1fr 5rem;
+  grid-template-areas:
+    'header header'
+    'sidebar content'
+    'footer footer';
 }
 
 #header {
   background: blue;
-  grid-column-end: -1;
-  grid-column-start: 1;
+  grid-area: header;
 }
 
 #sidebar {
   background: yellow;
+  grid-area: sidebar;
 }
 
 #content {
   background: red;
+  grid-area: content;
 }
 
 #footer {
   background: green;
-  grid-column-end: -1;
-  grid-column-start: 1;
+  grid-area: footer;
 }
