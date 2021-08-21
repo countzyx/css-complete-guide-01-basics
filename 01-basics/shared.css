@@ -7,13 +7,18 @@
 }
 
 body {
+  display: grid;
   font-family: 'Montserrat', sans-serif;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-rows: 3.5rem auto fit-content(8rem);
   margin: 0;
 }
 
 main {
-  margin-top: 3.5rem;
-  min-height: calc(100vh - 3.5rem - 8rem);
+  grid-area: main;
 }
 
 #backdrop {
@@ -32,6 +37,7 @@ main {
   background: #2ddf5c;
   display: flex;
   flex-direction: row;
+  grid-area: header;
   justify-content: space-between;
   left: 0;
   padding: 0.5rem 1rem;
@@ -51,10 +57,11 @@ main {
   background: transparent;
   border: none;
   cursor: pointer;
+  height: 2.5rem;
   padding-bottom: 0;
   padding-top: 0;
   vertical-align: middle;
-  width: 3rem;
+  width: 2.5rem;
 }
 
 #toggle-button:focus {
@@ -162,6 +169,7 @@ main {
 .main-footer {
   background: black;
   color: white;
+  grid-area: footer;
   margin-top: 3rem;
   padding: 2rem;
 }
