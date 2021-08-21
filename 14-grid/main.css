@@ -11,22 +11,18 @@
 
 .el2 {
   background: rgba(255, 0, 0, 0.5);
-  grid-column-end: -1;
-  grid-column-start: 1;
+  grid-column: 1 / -1;
   grid-row-start: 2;
   z-index: 1;
 }
 
 .el3 {
   background: rgba(0, 128, 0, 0.5);
-  grid-column-end: span 3;
-  grid-column-start: 2;
-  grid-row-end: span 2;
-  grid-row-start: 1;
+  grid-column: 2 / span 3;
+  grid-row: 1 / span 2;
 }
 
 .el4 {
   background: rgba(0, 4, 255, 0.5);
-  grid-column-end: -1;
-  grid-column-start: 1;
+  grid-column: 1 / -1;
 }
