@@ -53,7 +53,7 @@
     <main id="signup-page">
       <h1 id="signup-title">Awesome! Let's dive right in!</h1>
       <form action="index.html" id="signup-form">
-        <label for="title">Title</label>
+        <label for="title" id="title-label">Title</label>
         <select id="title">
           <option value="mr">Mr.</option>
           <option value="ms">Ms.</option>
@@ -66,11 +66,13 @@
         <input type="email" id="email" />
         <label for="password">Password</label>
         <input type="password" id="password" />
-        <input type="checkbox" id="agree-terms" />
-        <label for="agree-terms"
-          >Agree to
-          <a href="#">Terms &amp; Conditions</a>
-        </label>
+        <div class="signup-form__agree-terms">
+          <input type="checkbox" id="agree-terms" />
+          <label for="agree-terms"
+            >Agree to
+            <a href="#">Terms &amp; Conditions</a>
+          </label>
+        </div>
         <button type="submit" class="button" disabled>Sign Up</button>
       </form>
     </main>
