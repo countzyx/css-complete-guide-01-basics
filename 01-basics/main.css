@@ -121,6 +121,7 @@
   position: fixed;
   top: 20%;
   transform: translateY(-3rem);
+  transition: opacity 200ms ease-out, transform 500ms ease-out;
   width: 40%;
   z-index: 1001;
 }
