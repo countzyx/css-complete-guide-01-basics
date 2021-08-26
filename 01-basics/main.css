@@ -111,15 +111,16 @@
   text-align: center;
 }
 
-#modal {
+.modal {
   background: white;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  display: none;
   left: 30%;
+  opacity: 0;
   padding: 1rem;
   position: fixed;
   top: 20%;
+  transform: translateY(-3rem);
   width: 40%;
   z-index: 1001;
 }
@@ -158,6 +159,11 @@
 .modal__action--negative:active {
   background: #ff5454;
   border-color: #ff5454;
+}
+
+.modal--open {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (min-width: 40rem) {

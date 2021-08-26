@@ -10,7 +10,7 @@ $(function () {
   const modal = $('#modal');
   // console.log(backdrop, modal);
   const closeModal = function () {
-    modal && modal.hide();
+    modal && modal.removeClass('modal--open');
     backdrop.hide();
   };
 
@@ -27,6 +27,6 @@ $(function () {
   // console.log(planButtons);
   planButtons.click(function () {
     backdrop.show();
-    modal && modal.show();
+    modal && modal.addClass('modal--open');
   });
 });
