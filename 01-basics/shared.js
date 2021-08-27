@@ -1,9 +1,10 @@
 $(function () {
   const kCssBackdropActivate = 'backdrop--activate';
   const kCssBackdropShow = 'backdrop--show';
+  const kCssMobileNavShow = 'mobile-nav--show';
   const kCssModalShow = 'modal--show';
-  const backdrop = $('#backdrop');
 
+  const backdrop = $('#backdrop');
   const hideBackdrop = () => {
     if (!backdrop) {
       return;
@@ -12,7 +13,6 @@ $(function () {
     backdrop.removeClass(kCssBackdropShow);
     setTimeout(() => backdrop.removeClass(kCssBackdropActivate), 200);
   };
-
   const showBackdrop = () => {
     if (!backdrop) {
       return;
@@ -29,7 +29,7 @@ $(function () {
     }
 
     showBackdrop();
-    mobileNav.show();
+    mobileNav.addClass(kCssMobileNavShow);
   };
 
   const toggleButton = $('#toggle-button');
@@ -38,11 +38,10 @@ $(function () {
   const modal = $('#modal');
   // console.log(backdrop, modal);
   const hideAllModals = () => {
-    mobileNav && mobileNav.hide();
+    mobileNav && mobileNav.removeClass(kCssMobileNavShow);
     modal && modal.removeClass(kCssModalShow);
     hideBackdrop();
   };
-
   const showModal = () => {
     if (!modal) {
       return;

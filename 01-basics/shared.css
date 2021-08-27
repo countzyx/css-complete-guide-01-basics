@@ -63,7 +63,7 @@ main {
   text-decoration: none;
 }
 
-#toggle-button {
+.toggle-button {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -74,7 +74,7 @@ main {
   width: 2.5rem;
 }
 
-#toggle-button:focus {
+.toggle-button:focus {
   outline: none;
 }
 
@@ -100,13 +100,20 @@ main {
 
 .mobile-nav {
   background: white;
-  display: none;
   height: 100vh;
   left: 0;
+  opacity: 0;
   position: fixed;
   top: 0;
+  transform: translateX(-100%);
+  transition: opacity 200ms ease-out, transform 500ms ease-out;
   width: 80%;
   z-index: 1001;
+}
+
+.mobile-nav--show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .mobile-nav__items {
@@ -132,6 +139,10 @@ main {
   font-weight: bold;
   padding: 0.25rem 0;
   text-decoration: none;
+}
+
+.main-nav__item--cta {
+  animation: wiggle 200ms 3s 8 alternate;
 }
 
 .mobile-nav__item--cta a {
@@ -210,7 +221,7 @@ main {
 }
 
 @media (min-width: 40rem) {
-  #toggle-button {
+  .toggle-button {
     display: none;
   }
 
@@ -262,5 +273,14 @@ main {
 
   .main-footer__link {
     margin: 0 1rem;
+  }
+}
+
+@keyframes wiggle {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(10deg);
   }
 }
