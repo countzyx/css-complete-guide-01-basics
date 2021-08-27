@@ -60,4 +60,10 @@ $(function () {
   const planButtons = $('.plan button');
   // console.log(planButtons);
   planButtons && planButtons.click(showModal);
+
+  const ctaButton = $('.main-nav__item--cta');
+  // console.log(ctaButton);
+  ctaButton.bind('animationstart animationend animationiteration', (event) => {
+    console.log(event);
+  });
 });
