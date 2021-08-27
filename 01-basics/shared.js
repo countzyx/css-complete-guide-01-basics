@@ -1,32 +1,64 @@
 $(function () {
-  const toggleButton = $('#toggle-button');
+  const kCssBackdropActivate = 'backdrop--activate';
+  const kCssBackdropShow = 'backdrop--show';
+  const kCssModalShow = 'modal--show';
   const backdrop = $('#backdrop');
+
+  const hideBackdrop = () => {
+    if (!backdrop) {
+      return;
+    }
+
+    backdrop.removeClass(kCssBackdropShow);
+    setTimeout(() => backdrop.removeClass(kCssBackdropActivate), 200);
+  };
+
+  const showBackdrop = () => {
+    if (!backdrop) {
+      return;
+    }
+
+    backdrop.addClass(kCssBackdropActivate);
+    setTimeout(() => backdrop.addClass(kCssBackdropShow), 10);
+  };
+
   const mobileNav = $('#mobile-nav');
-  toggleButton.click(function () {
-    backdrop.show();
+  const showMobileNav = () => {
+    if (!mobileNav) {
+      return;
+    }
+
+    showBackdrop();
     mobileNav.show();
-  });
+  };
+
+  const toggleButton = $('#toggle-button');
+  toggleButton && toggleButton.click(showMobileNav);
 
   const modal = $('#modal');
   // console.log(backdrop, modal);
-  const closeModal = function () {
-    modal && modal.removeClass('modal--open');
-    backdrop.hide();
+  const hideAllModals = () => {
+    mobileNav && mobileNav.hide();
+    modal && modal.removeClass(kCssModalShow);
+    hideBackdrop();
   };
 
-  backdrop.click(function () {
-    closeModal();
-    mobileNav.hide();
-  });
+  const showModal = () => {
+    if (!modal) {
+      return;
+    }
 
-  const noButton = modal.find('.modal__action--negative');
+    showBackdrop();
+    modal.addClass(kCssModalShow);
+  };
+
+  backdrop.click(hideAllModals);
+
+  const noButton = modal.find('#no-button');
   // console.log(noButton);
-  noButton && noButton.click(closeModal);
+  noButton && noButton.click(hideAllModals);
 
   const planButtons = $('.plan button');
   // console.log(planButtons);
-  planButtons.click(function () {
-    backdrop.show();
-    modal && modal.addClass('modal--open');
-  });
+  planButtons && planButtons.click(showModal);
 });

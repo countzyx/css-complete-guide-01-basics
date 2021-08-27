@@ -162,7 +162,7 @@
   border-color: #ff5454;
 }
 
-.modal--open {
+.modal--show {
   opacity: 1;
   transform: translateY(0);
 }
