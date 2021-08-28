@@ -81,13 +81,13 @@ body {
     display: block;
     padding: 0.2rem;
     border: $border-default;
-  }
 
-  .documentation-link:hover,
-  .documentation-link:active {
-    color: white;
-    background: map-get($colors, active-link);
-    border-color: map-get($colors, active-link);
+    &:hover,
+    &:active {
+      color: white;
+      background: map-get($colors, active-link);
+      border-color: map-get($colors, active-link);
+    }
   }
 }
 
