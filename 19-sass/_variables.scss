@@ -1,0 +1,5 @@
+$colors: (
+  main: #521751,
+  active-link: #fa923f,
+);
+$border-default: 0.05rem solid map-get($colors, main);
