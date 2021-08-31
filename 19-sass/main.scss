@@ -9,7 +9,7 @@
   display: flex;
 }
 
-@mixin media-min-width($min-width) {
+@mixin media-min-width($min-width: $min-width-default) {
   @media (min-width: $min-width) {
     @content;
   }
@@ -18,7 +18,7 @@
 html {
   font-size: 94.75%;
 
-  @include media-min-width($min-width-default) {
+  @include media-min-width() {
     font-size: 125%;
   }
 }
@@ -38,7 +38,7 @@ body {
   padding: 3rem 0;
   box-sizing: border-box;
 
-  @include media-min-width($min-width-default) {
+  @include media-min-width() {
     padding: 3rem 0;
   }
 }
@@ -51,7 +51,7 @@ body {
   width: 90%;
   box-sizing: border-box;
 
-  @include media-min-width($min-width-default) {
+  @include media-min-width() {
     width: 30rem;
   }
 }
@@ -59,10 +59,10 @@ body {
 .sass-introduction {
   @extend .sass-section;
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
-}
 
-.sass-introduction p {
-  margin: 0;
+  p {
+    margin: 0;
+  }
 }
 
 .sass-details {
@@ -72,10 +72,10 @@ body {
 
 .section-header {
   border-bottom: $border-default;
-}
 
-.section-header h1 {
-  margin: 0 0 1rem 0;
+  h1 {
+    margin: 0 0 1rem 0;
+  }
 }
 
 .documentation-links {
